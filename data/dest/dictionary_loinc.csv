@@ -1,0 +1,257 @@
+CODE,DESCRIPTION
+8302-2,Body Height
+72514-3,Pain severity - 0-10 verbal numeric rating [Score] - Reported
+29463-7,Body Weight
+77606-2,Weight-for-length Per age and sex
+9843-4,Head Occipital-frontal circumference
+8462-4,Diastolic Blood Pressure
+8480-6,Systolic Blood Pressure
+8867-4,Heart rate
+9279-1,Respiratory rate
+6690-2,Leukocytes [#/volume] in Blood by Automated count
+789-8,Erythrocytes [#/volume] in Blood by Automated count
+718-7,Hemoglobin [Mass/volume] in Blood
+4544-3,Hematocrit [Volume Fraction] of Blood by Automated count
+787-2,MCV [Entitic volume] by Automated count
+785-6,MCH [Entitic mass] by Automated count
+786-4,MCHC [Mass/volume] by Automated count
+21000-5,Erythrocyte distribution width [Entitic volume] by Automated count
+777-3,Platelets [#/volume] in Blood by Automated count
+32207-3,Platelet distribution width [Entitic volume] in Blood by Automated count
+32623-1,Platelet mean volume [Entitic volume] in Blood by Automated count
+72166-2,Tobacco smoking status NHIS
+6206-7,Peanut IgE Ab in Serum
+6273-7,Walnut IgE Ab in Serum
+6082-2,Codfish IgE Ab in Serum
+6246-3,Shrimp IgE Ab in Serum
+6276-0,Wheat IgE Ab in Serum
+6106-9,Egg white IgE Ab in Serum
+6248-9,Soybean IgE Ab in Serum
+7258-7,Cow milk IgE Ab in Serum
+6189-5,White oak IgE Ab in Serum
+6085-5,Common Ragweed IgE Ab in Serum
+6833-8,Cat dander IgE Ab in Serum
+6095-4,American house dust mite IgE Ab in Serum
+6075-6,Cladosporium herbarum IgE Ab in Serum
+6844-5,Honey bee IgE Ab in Serum
+6158-0,Latex IgE Ab in Serum
+39156-5,Body Mass Index
+59576-9,Body mass index (BMI) [Percentile] Per age and gender
+QALY,QALY
+DALY,DALY
+QOLS,QOLS
+70274-6,Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]
+89204-2,Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]
+76501-6,In the past year  have you been afraid of your partner or ex-partner?
+93026-3,Do you feel physically and emotionally safe where you currently live?
+93027-1,Are you a refugee?
+93028-9,In the past year  have you spent more than 2 nights in a row in a jail  prison  detention center  or juvenile correctional facility?
+93038-8,Stress is when someone feels tense  nervous  anxious or can't sleep at night because their mind is troubled. How stressed are you?
+93029-7,How often do you see or talk to people that you care about and feel close to (For example: talking to friends on the phone  visiting friends or family  going to church or club meetings)?
+93030-5,Has lack of transportation kept you from medical appointments  meetings  work  or from getting things needed for daily living?
+93031-3,In the past year  have you or any family members you live with been unable to get any of the following when it was really needed?
+63586-2,During the past year  what was the total combined income for you and the family members you live with? This information will help us determine if you are eligible for any benefits.
+76437-3,What is your main insurance?
+67875-5,What is your current work situation?
+82589-3,What is the highest level of school that you have finished?
+56799-0,What address do you live at?
+93033-9,Are you worried about losing your housing?
+71802-3,What is your housing situation today?
+63512-8,How many family members  including yourself  do you currently live with?
+54899-0,What language are you most comfortable speaking?
+93034-7,Have you been discharged from the armed forces of the United States?
+93035-4,At any point in the past 2 years  has season or migrant farm work been your or your family's main source of income?
+32624-9,Which race(s) are you?
+56051-6,Are you Hispanic or Latino?
+55758-7,Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]
+8310-5,Body temperature
+76504-0,Total score [HARK]
+75626-2,Total score [AUDIT-C]
+82667-7,Total score [DAST-10]
+2708-6,Oxygen saturation in Arterial blood
+92142-9,Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection
+92141-1,Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection
+92131-2,Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection
+92140-3,Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92139-5,Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92138-7,Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92130-4,Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection
+92134-6,Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection
+94040-3,Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection
+94531-1,SARS-CoV-2 RNA Pnl Resp NAA+probe
+2093-3,Total Cholesterol
+2571-8,Triglycerides
+18262-6,Low Density Lipoprotein Cholesterol
+2085-9,High Density Lipoprotein Cholesterol
+4548-4,Hemoglobin A1c/Hemoglobin.total in Blood
+2339-0,Glucose
+6299-2,Urea Nitrogen
+38483-4,Creatinine
+49765-1,Calcium
+2947-0,Sodium
+6298-4,Potassium
+2069-3,Chloride
+20565-8,Carbon Dioxide
+14959-1,Microalbumin Creatinine Ratio
+33914-3,Estimated Glomerular Filtration Rate
+91146-1,What number best describes how  during the past week  pain has interfered with your general activity?
+91145-3,What number best describes how  during the past week  pain has interfered with your enjoyment of life?
+75893-8,What number best describes your pain on average in the past week?
+65750-2,Drugs of abuse 5 panel - Urine by Screen method
+38208-5,Pain severity - Reported
+44261-6,Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]
+20570-8,Hematocrit [Volume Fraction] of Blood
+6690-2,WBC Auto (Bld) [#/Vol]
+789-8,RBC Auto (Bld) [#/Vol]
+21000-5,RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]
+33914-3,Glomerular filtration rate/1.73 sq M.predicted
+2885-2,Protein [Mass/volume] in Serum or Plasma
+1751-7,Albumin [Mass/volume] in Serum or Plasma
+10834-0,Globulin [Mass/volume] in Serum by calculation
+1975-2,Bilirubin.total [Mass/volume] in Serum or Plasma
+6768-6,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+1742-6,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+1920-8,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+69453-9,Cause of Death [US Standard Certificate of Death]
+33756-8,Polyp size greatest dimension by CAP cancer protocols
+57905-2,Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method
+80382-5,Influenza virus A Ag [Presence] in Nasopharynx by Rapid immunoassay
+80383-3,Influenza virus B Ag [Presence] in Nasopharynx by Rapid immunoassay
+59460-6,Fall risk total [Morse Fall Scale]
+59461-4,Fall risk level [Morse Fall Scale]
+788-0,Erythrocyte distribution width [Ratio] by Automated count
+770-8,Neutrophils/100 leukocytes in Blood by Automated count
+736-9,Lymphocytes/100 leukocytes in Blood by Automated count
+5905-5,Monocytes/100 leukocytes in Blood by Automated count
+713-8,Eosinophils/100 leukocytes in Blood by Automated count
+706-2,Basophils/100 leukocytes in Blood by Automated count
+751-8,Neutrophils [#/volume] in Blood by Automated count
+731-0,Lymphocytes [#/volume] in Blood by Automated count
+742-7,Monocytes [#/volume] in Blood by Automated count
+711-2,Eosinophils [#/volume] in Blood by Automated count
+704-7,Basophils [#/volume] in Blood by Automated count
+2345-7,Glucose [Mass/volume] in Serum or Plasma
+3094-0,Urea nitrogen [Mass/volume] in Serum or Plasma
+2160-0,Creatinine [Mass/volume] in Serum or Plasma
+17861-6,Calcium [Mass/volume] in Serum or Plasma
+2951-2,Sodium [Moles/volume] in Serum or Plasma
+2823-3,Potassium [Moles/volume] in Serum or Plasma
+2075-0,Chloride [Moles/volume] in Serum or Plasma
+2028-9,Carbon dioxide  total [Moles/volume] in Serum or Plasma
+48065-7,Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma
+2276-4,Ferritin [Mass/volume] in Serum or Plasma
+89579-7,Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method
+14804-9,Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction
+2157-6,Creatine kinase [Enzymatic activity/volume] in Serum or Plasma
+1988-5,C reactive protein [Mass/volume] in Serum or Plasma
+5902-2,Prothrombin time (PT)
+6301-6,INR in Platelet poor plasma by Coagulation assay
+33959-8,Procalcitonin [Mass/volume] in Serum or Plasma
+26464-8,White Blood Cell (Elevated)
+26453-1,Red Blood Cell
+718-7,Hemoglobin
+20570-8,Hematocrit
+30428-7,MCV
+30385-9,RBC Distribution Width
+26515-7,Platelet Count
+42719-5,Total Bilirubin (Elevated)
+1742-6,ALT (Elevated)
+1920-8,AST (Elevated)
+2345-7,Glucose
+3094-0,Urea Nitrogen
+2160-0,Creatinine
+17861-6,Calcium
+2951-2,Sodium
+2823-3,Potassium
+2075-0,Chloride
+2028-9,Carbon Dioxide
+33037-3,Anion Gap
+2885-2,Protein
+1751-7,Albumin
+10834-0,Globulin
+6768-6,Alkaline Phosphatase
+80271-0,Physical findings of Abdomen by Palpation
+38265-5,DXA [T-score] Bone density
+44667-4,Site of distant metastasis in Breast tumor
+21907-1,Distant metastases.clinical [Class] Cancer
+33728-7,Size.maximum dimension in Tumor
+21905-5,Primary tumor.clinical [Class] Cancer
+85343-2,Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy
+21906-3,Regional lymph nodes.clinical [Class] Cancer
+85319-2,HER2 [Presence] in Breast cancer specimen by Immune stain
+85318-4,HER2 [Presence] in Breast cancer specimen by FISH
+85337-4,Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain
+85339-0,Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain
+417181009,Estrogen+Progesterone receptor Ag [Presence] in Tissue by Immune stain
+21924-6,Tumor marker Cancer
+21908-9,Stage group.clinical Cancer
+88040-1,Response to cancer treatment
+59557-9,Treatment status Cancer
+5767-9,Appearance of Urine
+5767-9,Odor of Urine
+32167-9,Clarity of Urine
+5778-6,Color of Urine
+5792-7,Glucose [Mass/volume] in Urine by Test strip
+25428-4,Glucose [Presence] in Urine by Test strip
+20505-4,Bilirubin.total [Mass/volume] in Urine by Test strip
+5770-3,Bilirubin.total [Presence] in Urine by Test strip
+5797-6,Ketones [Mass/volume] in Urine by Test strip
+2514-8,Ketones [Presence] in Urine by Test strip
+5811-5,Specific gravity of Urine by Test strip
+5803-2,pH of Urine by Test strip
+5804-0,Protein [Mass/volume] in Urine by Test strip
+20454-5,Protein [Presence] in Urine by Test strip
+5802-4,Nitrite [Presence] in Urine by Test strip
+5794-3,Hemoglobin [Presence] in Urine by Test strip
+5799-2,Leukocyte esterase [Presence] in Urine by Test strip
+88262-1,Gram positive blood culture panel by Probe in Positive blood culture
+44963-7,Capillary refill [Time] of Nail bed
+2713-6,Oxygen Saturation
+59032-3,Lactate [Mass/volume] in Blood
+8478-0,Mean blood pressure
+85352-3,Lymph nodes with isolated tumor cells [#] in Cancer specimen by Light microscopy
+10480-2,Estrogen+Progesterone receptor Ag [Presence] in Tissue by Immune stain
+75325-1,Symptom
+33762-6,NT-proBNP
+19123-9,Magnesium [Mass/volume] in Serum or Plasma
+2498-4,Iron [Mass/volume] in Serum or Plasma
+2500-7,Iron binding capacity [Mass/volume] in Serum or Plasma
+2502-3,Iron saturation [Mass Fraction] in Serum or Plasma
+88020-3,Functional capacity NYHA
+88021-1,Objective assessment of cardiovascular disease NYHA
+10230-1,Left ventricular Ejection fraction
+76690-7,Sexual orientation
+55277-8,HIV status
+28245-9,Abuse Status [OMAHA]
+71802-3,Housing status
+63513-6,Are you covered by health insurance or some other kind of health care plan [PhenX]
+46240-8,History of Hospitalizations+Outpatient visits
+19926-5,FEV1/FVC
+32465-7,Physical findings of Prostate
+2857-1,Prostate specific Ag [Mass/volume] in Serum or Plasma
+46288-7,US Guidance for biopsy of Prostate
+2744-1,pH of Arterial blood
+2019-8,Carbon dioxide [Partial pressure] in Arterial blood
+2703-7,Oxygen [Partial pressure] in Arterial blood
+1960-4,Bicarbonate [Moles/volume] in Arterial blood
+19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator
+66519-0,Percentage area affected by eczema Head and Neck
+66529-9,Percentage area affected by eczema Trunk
+66524-0,Percentage area affected by eczema Upper extremitiy - bilateral
+66534-9,Percentage area affected by eczema Lower extremitiy - bilateral
+72106-8,Total score [MMSE]
+99999-11,Withdrawal * as manifested by either of the following: a) Characteristic opioid withdrawal syndrome b) Same (or a closely related) substance is taken to relieve or avoid withdrawal symptoms
+99999-10,Tolerance as defined by either of the following: a) Need for markedly increased amounts of opioids to achieve intoxication or desired effect b) Markedly diminished effect with continued use of the same amount of opioid
+99999-9,Continued use despite knowledge of having a persistent or recurrent physical or psychological problem that is likely to have been caused or exacerbated by opioids.
+99999-8,Recurrent opioid use in situations in which it is physically hazardous
+99999-7,Important social  occupational  or recreational activities are given up or reduced because of opioid use
+99999-6,Continued opioid use despite having persistent or recurrent social or interpersonal problems caused or exacerbated by the effects of opioids
+99999-5,Recurrent opioid use resulting in a failure to fulfill major role obligations at work  school  or home
+99999-4,Craving or a strong desire to use opioids
+99999-3,A great deal of time is spent in activities necessary to obtain the opioid  use the opioid  or recover from its effects
+99999-2,There is a persistent desire or unsuccessful efforts to cut down or control opioid use
+99999-1,Opioids are often taken in larger amounts or over a longer period than was intended
+74006-8,Weight difference [Mass difference] --pre dialysis - post dialysis
+85344-0,Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy
+3024-7,Thyroxine (T4) free [Mass/volume] in Serum or Plasma
+3016-3,Thyrotropin [Units/volume] in Serum or Plasma
