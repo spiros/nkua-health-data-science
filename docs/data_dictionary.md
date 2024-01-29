@@ -1,16 +1,20 @@
 # Data dictionary
 
+## List of files
+
 | File | Description |
 |------|-------------|
 | [`conditions.csv.gz`](#conditions) | Patient conditions or diagnoses. |
 | [`encounters.csv.gz`](#encounters) | Patient encounter data. |
 | [`medications.csv.gz`](#medications) | Patient medication data. |
 | [`observations.csv.gz`](#observations) | Patient observations including vital signs and lab reports. |
-| [`patients.csv.gz`](#patients) | Patient demographic data. |
+| `dictionary_loinc.csv` | LOINC data dictionary. |
+| `dictionary_rxnorm.csv` | RxNorm data dictionary. |
+| `dictionary_snomed.csv` | SNOMED-CT data dictionary. | 
 
-Data Dictionary information for each CSV table follows below.
+## File schema
 
-# Conditions
+### Conditions
 | Column Name | Data Type | Required? | Description |
 |-------------|-----------|-----------|-------------|
 | Start | Date (`YYYY-MM-DD`) | `true` | The date the condition was diagnosed. |
@@ -19,7 +23,7 @@ Data Dictionary information for each CSV table follows below.
 | Encounter | UUID | `true` | Foreign key to the Encounter when the condition was diagnosed. |
 | Code | String | `true` | Diagnosis code from SNOMED-CT |
 
-# Encounters
+### Encounters
 | Column Name | Data Type | Required? | Description |
 |-------------|-----------|-----------|-------------|
 | Id | UUID | `true` | Primary Key. Unique Identifier of the encounter. |
@@ -36,7 +40,7 @@ Data Dictionary information for each CSV table follows below.
 | Payer_Coverage | Numeric | `true` | The amount of cost covered by the Payer. |
 | ReasonCode | String | `false` | Diagnosis code from SNOMED-CT, **only if** this encounter targeted a specific condition. |
 
-# Medications
+### Medications
 | Column Name | Data Type | Required? | Description |
 |-------------|-----------|-----------|-------------|
 | Start | iso8601 UTC Date (`yyyy-MM-dd'T'HH:mm'Z'`) | `true` | The date and time the medication was prescribed. |
@@ -51,7 +55,7 @@ Data Dictionary information for each CSV table follows below.
 | TotalCost | Numeric | `true` | The total cost of the prescription, including all dispenses. |
 | ReasonCode | String | `false` | Diagnosis code from SNOMED-CT specifying why this medication was prescribed. |
 
-# Observations
+### Observations
 | Column Name | Data Type | Required? | Description |
 |-------------|-----------|-----------|-------------|
 | Date | iso8601 UTC Date (`yyyy-MM-dd'T'HH:mm'Z'`) | `true` | The date and time the observation was performed. |
@@ -63,7 +67,7 @@ Data Dictionary information for each CSV table follows below.
 | Units | String | `false` | The units of measure for the value. |
 | Type | String | `true` | The datatype of `Value`: `text` or `numeric` |
 
-# Patients
+### Patients
 | Column Name | Data Type | Required? | Description |
 |-------------|-----------|-----------|-------------|
 | Id | UUID | `true` | Primary Key. Unique Identifier of the patient. |
