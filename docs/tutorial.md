@@ -28,9 +28,10 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
 * How many unique patients does the file contain? The [`nunique()`](https://pandas.pydata.org/docs/reference/api/pandas.Series.nunique.html#pandas.Series.nunique) function returns the number of unique values with or without missing values.
 * Drop all columns apart from `Id`, `BIRTHDATE`, `DEATHDATE`, `RACE`, `ETHNICITY`, `GENDER`. To do this, use the [`drop`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop) function.
 * Examine the data types, do they look correct? Correct the data types where required. The `dtypes` attribute contains the data types for each column in a DataFrame.
+    * Pandas has a useful function for converting between different data types [`astype`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html#pandas.DataFrame.astype).
 * Create a new column, called “exclude” and set the default value to 0
 * For the `RACE`, `ETHNICITY` and `GENDER` variables
-    * Count the number of unique values - how many values does each column have and what is the most frequent value ?
+    * Count the number of unique values - how many values does each column have and what is the most frequent value?
     * Count the number of missing values - how many missing values does each column have?
     * Confirm that the observed values are correct. 
     * Set the exclude flag to 1 for patients that have incorrect or missing values in any of these variables
