@@ -1,6 +1,5 @@
 ## Part 3: importing and cleaning the conditions file
 
-
 * Import the conditions file in Pandas
    * Count the number of rows and columns.
    * Examine the data types, do they look correct? Correct the data types where required.
@@ -29,4 +28,5 @@
     * Display the top 10 most common SNOMED concepts used in the dataset.
     * Display the bottom 10 less common SNOMED concepts used in the dataset.
     * Tip: For both of these tasks, you can use the pandas groupby() function.
+    * How many patients have been diagnosed with hypertension?
 
