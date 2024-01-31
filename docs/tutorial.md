@@ -67,7 +67,7 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
     * Count and delete any rows where the `CODE` or `DESCRIPTION` values are missing.
 
 * Merge the `conditions` table with the SNOMED dictionary.
-    * Consider the type of merge that you would perform. The import thing here is to retain all information of patients and their hospitalizations and not delete any data.
+    * Consider the type of merge that you would perform. The important thing here is to retain all information of patients and their hospitalizations and not delete any data.
     * You should add the `indicator=True` parameter to the merge command and examine it's output.
         * Display any invalid SNOMED codes and the number of patients and hospitalizations that these codes affect. Any codes that are invalid would not have an entry in the dictionary and the `DESCRIPTION` column would be empty.
     * Save the merged dataframe as a new Pandas object and display the total number of rows and columns.
@@ -78,3 +78,44 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
     * Tip: For both of these tasks, you can use the pandas groupby() function.
     * How many patients have been diagnosed with hypertension?
 
+## Part 4: importing and cleaning the observations file
+
+* Import the observations file in Pandas
+   * Count the number of rows and columns.
+   * Examine the data types, do they look correct? Correct the data types where required.
+    * Counting unique values
+        * Count the number of unique patients.
+        * Count the number of LOINC concept identifiers.
+        * Count the number of unique encounters.
+   * Missing data
+        * Count the number of encounters that are missing the date of admission.
+        * Count the number of encounters that are missing the date of discharge.
+        * Count the number of encounters that are missing a diagnoses and the number of patients that are affected by this problem.
+
+* Import the LOINC data dictionary
+    * Count the number of rows and columns.
+    * Count the number of unique diagnoses.
+    * Count and delete any rows where the `CODE` or `DESCRIPTION` values are missing.
+
+* Merge the `observations` table with the LOINC dictionary.
+    * Consider the type of merge that you would perform. The important thing here is to retain all information of patients and their hospitalizations and not delete any data.
+    * You should add the `indicator=True` parameter to the merge command and examine it's output.
+        * Display any invalid LOINC concept codes and the number of patients and hospitalizations that these codes affect. Any codes that are invalid would not have an entry in the dictionary and the `DESCRIPTION` column would be empty.
+        * Delete all rows with an invalid LOINC concept identifier.
+    * Save the merged dataframe as a new Pandas object and display the total number of rows and columns.
+
+* Explore the lab measurements
+    * Display the top 10 most common LOINC concepts used in the dataset.
+    * Display the bottom 10 less common LOINC concepts used in the dataset.
+    * Tip: For both of these tasks, you can use the pandas groupby() function.
+
+* Blood pressure measurements
+    * Identify the LOINC concept codes for systolic and diastolic blood pressure measurements.
+    * From the `observations` DataFrame, select all systolic and diastolic blood pressure measurements and save them into a new DataFrame.
+        * Display the rows and columns.
+        * Display the number of patients with at least one measurement of either a systolic or a diastolic blood pressure measurement.
+        * Examine the data types of this DataFrame, are they correct? Set the appropriate data type.
+        * For systolic and diastolic blood pressure measurements:
+            * Examine the distribution of values.
+            * Plot the distribution of values. (Bonus: create a stacked histogram that plots both systolic and diastolic values)
+            * Delete any rows with incorrect values e.g. a systolic blood pressure over 220 or a diastolic blood pressure below 30
