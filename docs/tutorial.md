@@ -20,30 +20,30 @@ The main LOINC paper https://academic.oup.com/clinchem/article-abstract/49/4/624
 
 Tip: data files can be directly read from (public) GitHub repositories using Pandas. You will however need to slightly change the URL of the file and replace “blob” with “raw” for example:
 https://github.com/spiros/nkua-health-data-science/blob/master/data/dest/patients.csv.gz to 
-https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients.csv.gz which can then be directly read using the read_csv() function. 
+https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients.csv.gz which can then be directly read using the read_csv() function. Alternatively, you can just download the files directly to your PC or laptop and work from them or work via CoCalc.
 
 
 * Import the patients data file in Pandas
-    * How many rows and how many columns were imported?
-* How many unique patients does the file contain?
-* Drop all columns apart from Id, BIRTHDATE, DEATHDATE, RACE, ETHNICITY, GENDER
-* Examine the data types, do they look correct? Correct the data types where required.
+    * How many rows and how many columns were imported? You can use the `shape` property to display this which returns a tuple of rows and columns.
+* How many unique patients does the file contain? The [`nunique()`](https://pandas.pydata.org/docs/reference/api/pandas.Series.nunique.html#pandas.Series.nunique) function returns the number of unique values with or without missing values.
+* Drop all columns apart from `Id`, `BIRTHDATE`, `DEATHDATE`, `RACE`, `ETHNICITY`, `GENDER`. To do this, use the [`drop`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop) function.
+* Examine the data types, do they look correct? Correct the data types where required. The `dtypes` attribute contains the data types for each column in a DataFrame.
 * Create a new column, called “exclude” and set the default value to 0
-* For the RACE, ETHNICITY and GENDER variables
+* For the `RACE`, `ETHNICITY` and `GENDER` variables
     * Count the number of unique values - how many values does each column have and what is the most frequent value ?
     * Count the number of missing values - how many missing values does each column have?
     * Confirm that the observed values are correct. 
     * Set the exclude flag to 1 for patients that have incorrect or missing values in any of these variables
-* The patient's date of birth (BIRTHDATE) is a mandatory field
-    * What are the earliest and latest dates in the dataset?
+* The patient's date of birth (`BIRTHDATE``) is a mandatory field
+    * What are the earliest and latest dates in the dataset? You can use `min` and `max` to display this.
     * How many patients have an invalid date of birth? For the purposes of this tutorial, we will consider the * following dates invalid: 
         * a missing value,
         * a invalid value e.g. a string of numbers or letters, 
         * a date of birth after a date of death
         * a date in the future e.g. after 2021
         * a date too far in the past e.g. 1910
-    * Set the exclude flag to 1 for all patients with an invalid BIRTHDATE
-* How many patients did you exclude in total ?
+    * Set the exclude flag to 1 for all patients with an invalid `BIRTHDATE`
+* How many patients did you exclude in total?
 * Export the patient file you have QC’ed into a new location (you can use .to_csv() for this)
 
 ## Part 3: importing and cleaning the conditions file
@@ -70,7 +70,6 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
     * You should add the `indicator=True` parameter to the merge command and examine it's output.
         * Display any invalid SNOMED codes and the number of patients and hospitalizations that these codes affect. Any codes that are invalid would not have an entry in the dictionary and the `DESCRIPTION` column would be empty.
     * Save the merged dataframe as a new Pandas object and display the total number of rows and columns.
-    
 
 * Explore the diagnoses
     * Display the top 10 most common SNOMED concepts used in the dataset.
