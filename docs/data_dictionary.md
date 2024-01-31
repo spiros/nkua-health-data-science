@@ -82,8 +82,8 @@
 | Suffix | String | `false` | Name suffix, such as `PhD`, `MD`, `JD`, etc. |
 | Maiden | String | `false` | Maiden name of the patient. |
 | Marital | String | `false` | Marital Status. `M` is married, `S` is single. Currently no support for divorce (`D`) or widowing (`W`) |
-| Race | String | `true` | Description of the patient's primary race. |
-| Ethnicity | String | `true` | Description of the patient's primary ethnicity. |
+| Race | String | `true` | Description of the patient's primary race. Valid values: `white`, `black`, `asian`, `hawaiian`, `other`, `native`.|
+| Ethnicity | String | `true` | Description of the patient's primary ethnicity. Valid values: `nonhispanic` and `hispanic`. |
 | Gender | String | `true` | Gender. `M` is male, `F` is female. |
 | BirthPlace | String | `true` | Name of the town where the patient was born. |
 | Address | String | `true` | Patient's street address without commas or newlines. |
