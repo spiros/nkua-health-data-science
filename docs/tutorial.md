@@ -23,7 +23,7 @@ https://github.com/spiros/nkua-health-data-science/blob/master/data/dest/patient
 https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients.csv.gz which can then be directly read using the read_csv() function. Alternatively, you can just download the files directly to your PC or laptop and work from them or work via CoCalc.
 
 
-* Import the patients data file in Pandas
+* Import the `patients` data file in Pandas.
     * How many rows and how many columns were imported? You can use the `shape` property to display this which returns a tuple of rows and columns.
 * How many unique patients does the file contain? The [`nunique()`](https://pandas.pydata.org/docs/reference/api/pandas.Series.nunique.html#pandas.Series.nunique) function returns the number of unique values with or without missing values.
 * Drop all columns apart from `Id`, `BIRTHDATE`, `DEATHDATE`, `RACE`, `ETHNICITY`, `GENDER`. To do this, use the [`drop`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop) function.
@@ -49,19 +49,19 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
 
 ## Part 3: importing and cleaning the conditions file
 
-* Import the conditions file in Pandas
+* Import the `conditions` file in Pandas
    * Count the number of rows and columns.
    * Examine the data types, do they look correct? Correct the data types where required.
-    * Counting unique values
+    * Counting unique values:
         * Count the number of unique patients.
         * Count the number of unique encounters.
         * Count the number of unique diagnoses.
-   * Missing data
+   * Missing data:
         * Count the number of encounters that are missing the date of admission.
         * Count the number of encounters that are missing the date of discharge.
         * Count the number of encounters that are missing a diagnoses and the number of patients that are affected by this problem.
 
-* Import the SNOMED-CT data dictionary
+* Import the SNOMED-CT data dictionary.
     * Count the number of rows and columns.
     * Count the number of unique diagnoses.
     * Count and delete any rows where the `CODE` or `DESCRIPTION` values are missing.
@@ -80,19 +80,19 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
 
 ## Part 4: importing and cleaning the observations file
 
-* Import the observations file in Pandas
+* Import the `observations` file in Pandas.
    * Count the number of rows and columns.
    * Examine the data types, do they look correct? Correct the data types where required.
-    * Counting unique values
+    * Counting unique values:
         * Count the number of unique patients.
         * Count the number of LOINC concept identifiers.
         * Count the number of unique encounters.
-   * Missing data
+   * Missing data:
         * Count the number of encounters that are missing the date of admission.
         * Count the number of encounters that are missing the date of discharge.
         * Count the number of encounters that are missing a diagnoses and the number of patients that are affected by this problem.
 
-* Import the LOINC data dictionary
+* Import the LOINC data dictionary:
     * Count the number of rows and columns.
     * Count the number of unique diagnoses.
     * Count and delete any rows where the `CODE` or `DESCRIPTION` values are missing.
@@ -104,12 +104,12 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
         * Delete all rows with an invalid LOINC concept identifier.
     * Save the merged dataframe as a new Pandas object and display the total number of rows and columns.
 
-* Explore the lab measurements
+* Explore the lab measurements:
     * Display the top 10 most common LOINC concepts used in the dataset.
     * Display the bottom 10 less common LOINC concepts used in the dataset.
     * Tip: For both of these tasks, you can use the pandas groupby() function.
 
-* Blood pressure measurements
+* Blood pressure measurements:
     * Identify the LOINC concept codes for systolic and diastolic blood pressure measurements.
     * From the `observations` DataFrame, select all systolic and diastolic blood pressure measurements and save them into a new DataFrame.
         * Display the rows and columns.
