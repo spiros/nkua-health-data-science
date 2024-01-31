@@ -34,7 +34,7 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
     * Count the number of missing values - how many missing values does each column have?
     * Confirm that the observed values are correct. 
     * Set the exclude flag to 1 for patients that have incorrect or missing values in any of these variables
-* The patient's date of birth (`BIRTHDATE``) is a mandatory field
+* The patient's date of birth (`BIRTHDATE`) is a mandatory field
     * What are the earliest and latest dates in the dataset? You can use `min` and `max` to display this.
     * How many patients have an invalid date of birth? For the purposes of this tutorial, we will consider the * following dates invalid: 
         * a missing value,
