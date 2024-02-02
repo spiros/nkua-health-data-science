@@ -111,11 +111,17 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
 
 * Blood pressure measurements:
     * Identify the LOINC concept codes for systolic and diastolic blood pressure measurements.
-    * From the `observations` DataFrame, select all systolic and diastolic blood pressure measurements and save them into a new DataFrame.
-        * Display the rows and columns.
+    * From the `observations` DataFrame, select all systolic and diastolic blood pressure measurements and save them into a new DataFrame. Tip: create a deep copy using [`copy()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.copy.html) which will allow you to make changes to the new DataFrame.
+        * Display the number of rows and columns.
         * Display the number of patients with at least one measurement of either a systolic or a diastolic blood pressure measurement.
-        * Examine the data types of this DataFrame, are they correct? Set the appropriate data type.
-        * For systolic and diastolic blood pressure measurements:
+        * Display the number of patients with at least one measurement of both systolic and diastolic blood pressure. Tip: You can use [`set`](https://docs.python.org/3/tutorial/datastructures.html#sets) operations to achieve this.
+        * Examine the data types of this DataFrame, are they correct? Set the appropriate data types where appropriate.
+        * For systolic and diastolic blood pressure measurements separately:
             * Examine the distribution of values.
-            * Plot the distribution of values. (Bonus: create a stacked histogram that plots both systolic and diastolic values)
-            * Delete any rows with incorrect values e.g. a systolic blood pressure over 220 or a diastolic blood pressure below 30
+            * Plot the distribution of values.
+                * Plot using a histogram.
+                * Plot using a box plot.
+                * Bonus: create a stacked histogram that plots both systolic and diastolic values.
+            * Delete any rows with incorrect values e.g. a systolic blood pressure over 220 or a diastolic blood pressure below 30.
+
+* Repeat the same process as in the previous step for body mass index (BMI).
