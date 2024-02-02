@@ -125,3 +125,19 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
             * Delete any rows with incorrect values e.g. a systolic blood pressure over 220 or a diastolic blood pressure below 30.
 
 * Repeat the same process as in the previous step for body mass index (BMI).
+
+## Part 5: bringing it all together
+
+This part of the tutorial combines all of the things covered in previous parts into a single working example.
+
+* Import the (cleaned) `patient` file which was generated in Part 2 of this tutorial.
+    * Delete patients where `exclude=1`.
+* Identify patients with a diagnosis of essential hypertension (HT):
+    * Create two variables in the `patient` file:
+        * One variable that will contain the earliest date of HT diagnosis if applicable. Patients that have not been diagnosed with HT will have a missing value.
+        * One variable that will act as a flag to identify patients that have been diagnosed with HT.
+* Extract the systolic and diastolic blood pressure measurements for the entire cohort.
+    * For the HT cohort, delete any measurements that have occured prior to the date of diagnosis.
+* Explore the distribution of measurements between the two cohorts (HT patients and patients not diagnosed with HT).
+    * Calculate and display key distribution metrics.
+    * Plot the values using a [`boxplot`](https://seaborn.pydata.org/generated/seaborn.boxplot.html).
