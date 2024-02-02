@@ -138,6 +138,7 @@ This part of the tutorial combines all of the things covered in previous parts i
         * One variable that will act as a flag to identify patients that have been diagnosed with HT.
 * Extract the systolic and diastolic blood pressure measurements for the entire cohort.
     * For the HT cohort, delete any measurements that have occured prior to the date of diagnosis.
-* Explore the distribution of measurements between the two cohorts (HT patients and patients not diagnosed with HT).
+    * Explore the distribution of measurements between the two cohorts (HT patients and patients not diagnosed with HT).
     * Calculate and display key distribution metrics.
     * Plot the values using a [`boxplot`](https://seaborn.pydata.org/generated/seaborn.boxplot.html).
+* Repeat the same process for BMI.
