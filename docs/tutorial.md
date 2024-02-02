@@ -30,18 +30,18 @@ https://github.com/spiros/nkua-health-data-science/raw/master/data/dest/patients
 * Examine the data types, do they look correct? Correct the data types where required. The `dtypes` attribute contains the data types for each column in a DataFrame.
     * Pandas has a useful function for converting between different data types [`astype`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html#pandas.DataFrame.astype).
 * Create a new column, called “exclude” and set the default value to 0
-* For the `RACE`, `ETHNICITY` and `GENDER` variables
+* For the `RACE`, `ETHNICITY` and `GENDER` variables:
     * Count the number of unique values - how many values does each column have and what is the most frequent value?
     * Count the number of missing values - how many missing values does each column have?
     * Confirm that the observed values are correct. 
     * Set the exclude flag to 1 for patients that have incorrect or missing values in any of these variables
-* The patient's date of birth (`BIRTHDATE`) is a mandatory field
+* The patient's date of birth (`BIRTHDATE`) is a mandatory field:
     * What are the earliest and latest dates in the dataset? You can use `min` and `max` to display this.
     * How many patients have an invalid date of birth? For the purposes of this tutorial, we will consider the * following dates invalid: 
         * a missing value,
         * a invalid value e.g. a string of numbers or letters, 
-        * a date of birth after a date of death
-        * a date in the future e.g. after 2021
+        * a date of birth after a date of death,
+        * a date in the future e.g. after 2021,
         * a date too far in the past e.g. 1910
     * Set the exclude flag to 1 for all patients with an invalid `BIRTHDATE`
 * How many patients did you exclude in total?
